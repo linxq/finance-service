@@ -1,0 +1,29 @@
+{
+  "name": "ts",
+  "version": "1.0.0",
+  "description": "Use webpack to build node projects",
+  "author": "MarxJiao <marxjiao@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run serve",
+    "serve": "nodemon --watch dist dist/server.js",
+    "build": "npm run tslint && npm run build-ts",
+    "build-ts": "tsc",
+    "watch": "npm run tslint && npm run watch-ts",
+    "watch-ts": "tsc -w",
+    "tslint": "tslint -c tslint.json -p tsconfig.json"
+  },
+  "dependencies": {
+    "@types/koa": "^2.0.47",
+    "globby": "^8.0.1",
+    "koa": "^2.6.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "routing-controllers": "^0.7.7",
+    "tslint": "^5.11.0",
+    "typescript": "^3.2.2"
+  },
+  "devDependencies": {
+    "@types/globby": "^8.0.0"
+  }
+}
