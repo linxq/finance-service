@@ -12,12 +12,12 @@
     "paths": {
       "*": [
         "node_modules/*",
-        "server/types/*"
+        "src/types/*"
       ]
     }
   },
   "include": [
-    "server/**/*"
+    "src/**/*"
   ],
   "exclude": [
     "node_modules"
